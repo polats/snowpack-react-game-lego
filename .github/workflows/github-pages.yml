@@ -1,5 +1,13 @@
 name: Build and Deploy
-on: [push]
+on:
+
+  # manual trigger
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
