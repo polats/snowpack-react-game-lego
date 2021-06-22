@@ -14,9 +14,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
+        <p className="text-gray-500">
           Page has been open for <code>{count}</code> seconds.
         </p>
+        <h1>Styled by Tailwind</h1>
         <img src={logo} className="App-logo" alt="logo"/>
       </header>
     </div>
