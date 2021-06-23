@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
 
-import App from './App.jsx';
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -10,7 +11,7 @@ ReactDOM.render(
 );
 
 // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
-// Learn more: https://www.snowpack.dev/concepts/hot-module-replacement
-if (undefined /* [snowpack] import.meta.hot */ ) {
-  undefined /* [snowpack] import.meta.hot */ .accept();
+// Learn more: https://snowpack.dev/concepts/hot-module-replacement
+if (import.meta.hot) {
+  import.meta.hot.accept();
 }
